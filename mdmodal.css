@@ -1,0 +1,112 @@
+/**
+ * Dynamic responsive modals
+ *
+ * @file mdmodal.css
+ * @author Tommy Eliassen (tommy@minddesign.no)
+ * @version 0.0
+ */
+
+.mdoverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: scroll;
+    background-color: rgb(0,0,0);
+    opacity: .5;
+    z-index: 1000;
+}
+
+.mdoverlay.show {
+
+}
+
+
+.mdmodal {
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    background-color: #fff;
+    z-index: 2001;
+}
+
+.mdmodal.show {
+
+}
+
+.mdmodal-close {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    width: 63px;
+    height: 23px;
+    background-color: #0098cd;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 21px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #fff;
+}
+
+.mdmodal-navbar {
+    position: absolute;
+    width: 100%;
+    min-height: 49px;
+    line-height: 49px;
+    border-bottom: 2px solid #ccc;
+    background-color: #0098cd;
+    color: #fff;
+}
+
+.mdmodal-navbar .modal-title {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mdmodal-navbar .btn {
+    text-transform: uppercase;
+    line-height: 34px;
+}
+
+.mdmodal-navbar .btn:hover {
+    color: #006087;
+}
+
+.mdmodal.has-navbar .mdmodal-content {
+    padding-top: 51px;
+}
+
+
+@media (min-width: 768px) {
+    .mdmodal {
+        width: 320px !important;
+        left: 50%;
+        margin-left: -160px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .mdmodal {
+        margin-top: 0 !important;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}

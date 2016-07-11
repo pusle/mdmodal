@@ -1,0 +1,2 @@
+# mdmodal
+Simple jQuery modal

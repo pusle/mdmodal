@@ -2,4 +2,4 @@
 Simple jQuery modal
 
 ## Usage
-<code>$('&gt;p/&lt;').html('Hello World!').mdmodal();</code>
+<code>$('&lt;p/&gt;').html('Hello World!').mdmodal();</code>
